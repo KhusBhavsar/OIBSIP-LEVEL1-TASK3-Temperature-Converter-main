@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin-Celsius</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="bigContainer">
+        <header>
+            <nav>
+                <section id="sec">
+                    <p>Cel-Far-Kel Temp.</p>
+                    <span class="menubtn" onclick="openNav()" style="margin: 30px;">&#9776;</span>
+                    <div class="navLinks">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Convert: </li>
+                            <li><a href="Kelvin-Celsius.html">Kelvin-Celsius</a></li>
+                            <li><a href="Kelvin-Farenheit.html">Kelvin-Farenheit</a></li>
+                            <li><a href="Celsius-Farenheit.html">Celsius-Farenheit</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+
+            <div class="sideNav" id="sidenav">
+                <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+                <a href="/">Home</a>
+                <a href="Kelvin-Celsius.html">Kelvin-Celsius</a>
+                <a href="Kelvin-Farenheit.html">Kelvin-Farenheit</a>
+                <a href="Celsius-Farenheit.html">Celsius-Farenheit</a>
+            </div>
+        </header>
+
+        <div class="container1">
+            <div class="container">
+                <p>Temperature Converter</p>
+                <form>
+                    <div class="Celsius">
+                        <label>Celsius:</label>
+                        <input type="number" id="celsius" autocomplete="off">
+                        <div>
+                            <button type="button" onclick="celsiusToKelvin()">Convert to Kelvin</button>
+                        </div>
+                    </div>
+                    <div class="Kelvin">
+                        <label>Kelvin:</label>
+                        <input type="number" id="kelvin" autocomplete="off">
+                        <div>
+                            <button type="button" onclick="kelvinToCelsius()">Convert to Celsius</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

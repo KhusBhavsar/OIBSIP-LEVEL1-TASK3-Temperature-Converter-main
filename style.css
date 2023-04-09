@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=IBM+Plex+Mono&family=Itim&family=Lobster&family=Pacifico&family=Rajdhani:wght@300&family=Stick+No+Bills:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-weight: 900;
+    font-family: Megrim;
+    scroll-behavior: smooth;
+
+}
+
+.bigContainer {
+    background-image: url('images/earth\(14\).jpg');
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+
+
+.container1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 181, 207, 0.879);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+
+.container {
+    color: rgb(15, 63, 31);
+    position: relative;
+    top: 200px;
+    background-color: rgb(0, 255, 0);
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+
+header {
+   height: 15vh;
+   position: relative;
+   z-index: 5;
+}
+.sideNav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: #0b3314;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: gainsboro;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNav a:hover {
+    color: #78dc30;
+
+    text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+        -3px 0px 7px rgba(81, 67, 21, 0.8),
+        0px 4px 7px rgba(81, 67, 21, 0.8);
+    transform: translateX(10px);
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+header nav {
+    background: linear-gradient(to right, #68da4e, #315a08);
+    height: 100%;
+    opacity: 0.8;
+}
+
+header nav #sec .menubtn {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    color: gainsboro;
+    border-radius: 10%;
+}
+
+header nav #sec {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 15%;
+    transition: background-color 0.5s ease;
+}
+
+
+header nav #sec ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav #sec ul li {
+    padding: 35px;
+    list-style: none;
+    font-size: larger;
+}
+
+header nav #sec ul li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: Bebas Neue;
+    letter-spacing: 3px;
+    position: relative;
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+header nav #sec ul li a::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #112e03;
+    height: 3px;
+    transition: 0.6s;
+}
+
+header nav #sec ul li a:hover::after {
+    width: 100%;
+}
+
+header #sec p {
+    font-size: xx-large;
+    font-family: Lobster;
+    padding: 23px;
+    color: #79cb8b;
+    text-shadow: -1px -1px 3px #020202,
+        2px 2px 4px #1b1b1b;
+}
+
+
+.container1 .container p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+form {
+    display: block;
+}
+
+.Celsius{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Farenheit{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Kelvin{
+    display: flex ;
+    justify-content: space-around;
+}
+
+label {
+  font-family: Walter Turncoat;
+    font-size: 15px;
+    display: block;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+
+    background-color: #4c4caf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17302e;
+}
+
+@media screen and (max-width: 490px) {
+    .container1 .container p {
+        font-size: large;
+        font-weight: 700;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    header nav #sec .menubtn {
+        display: flex;
+    }
+
+    nav #sec .navLinks {
+        display: none;
+    }
+
+    .sideNav {
+        display: block !important;
+    }
+}

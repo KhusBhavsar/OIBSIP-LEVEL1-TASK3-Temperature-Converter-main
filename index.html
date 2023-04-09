@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Teko:wght@600&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="bigContainer">
+        <div class="container1"></div>
+        <header>
+            <nav>
+                <section id="sec">
+                    <p>Cel-Far-Kel Temp.</p>
+                    <span class="menubtn" onclick="openNav()" style="margin: 30px;">&#9776;</span>
+                    <div class="navLinks">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Convert: </li>
+                            <li><a href="Kelvin-Celsius.html">Kelvin-Celsius</a></li>
+                            <li><a href="Kelvin-Farenheit.html">Kelvin-Farenheit</a></li>
+                            <li><a href="Celsius-Farenheit.html">Celsius-Farenheit</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+
+            <div class="sideNav" id="sidenav">
+                <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+                <a href="/">Home</a>
+                <a href="Kelvin-Celsius.html">Kelvin-Celsius</a>
+                <a href="Kelvin-Farenheit.html">Kelvin-Farenheit</a>
+                <a href="Celsius-Farenheit.html">Celsius-Farenheit</a>
+            </div>
+        </header>
+
+
+
+        <div class="container1">
+            <div class="container" style="width:65%">
+                <p>Welcome to Cel-Far-Kel</p>
+                <p style="font-family: Pangolin;font-size: 15px;">Welcome to my temperature converter web app!
+                    With our user-friendly interface, converting temperatures
+                    between Celsius, Fahrenheit, and Kelvin has never been easier.
+                    Whether you're a student, a scientist, or simply trying to
+                    check the weather forecast, our app is designed to provide quick
+                    and accurate temperature conversions. Simply input the temperature
+                    you want to convert, select the unit you're starting with and the
+                    unit you want to convert to, and voila! Our app does the rest for
+                    you.Try it out today and make temperature conversions a breeze</p>
+                <center><a href="Celsius-Farenheit.html"><button
+                            style="margin-top: 20px; padding: 10px; width: 20vh;">Explore</button></a></center>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
